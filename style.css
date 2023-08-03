@@ -3,12 +3,12 @@ font-family: Roboto Mono Medium;
 margin: 5px;
 border-bottom: rgba(71, 0, 52, 0.8);
 background-color: rgba(71, 0, 52, 0.8);
+animation: slideIn 0.5s ease-in-out both;
 }
 
-
 #input {
-margin: 5.5px;
-background-color:  rgba(17, 96, 98, 0.5);
+margin: 6;
+background-color:  rgba(71, 0, 52, 0.8);
 } 
 
 #entry{
@@ -18,7 +18,12 @@ background-color:  rgba(17, 96, 98, 0.5);
 #text:selected {
   color: #000000;
 }
+ @keyframes slideIn {
+    0% {
+       opacity: 0;
+    }
 
-#entry:selected {
-
-}
+    100% {
+       opacity: 1;
+    }
+ }
